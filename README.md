@@ -15,55 +15,63 @@ Note that it clones the original content you insert, and removes the original (t
 
 Given this example HTML:
 
-    <ul id="list">
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-    </ul>
-    <ul id="list">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-    </ul>
+```html
+<ul id="list">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+</ul>
+<ul id="list">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ul>
+```
 
 You can insert some content at a specific place:
 
-    $('ul').appendAt('<li>NEW!</li>', 2);
+```javascript
+$('ul').appendAt('<li>NEW!</li>', 2);
+```
 
 Will result in:
 
-    <ul id="list">
-        <li>One</li>
-        <li>Two</li>
-        <li>NEW!</li>
-        <li>Three</li>
-    </ul>
-    <ul id="list">
-        <li>A</li>
-        <li>B</li>
-        <li>NEW!</li>
-        <li>C</li>
-    </ul>
+```html
+<ul id="list">
+    <li>One</li>
+    <li>Two</li>
+    <li>NEW!</li>
+    <li>Three</li>
+</ul>
+<ul id="list">
+    <li>A</li>
+    <li>B</li>
+    <li>NEW!</li>
+    <li>C</li>
+</ul>
+```
 
 Extra bonus - you can insert content at random.  Each insertion will be at a possibly different random position.  This code:
 
-
-    $('ul').appendAtRandom('<li>NEW!</li>');
+```javascript
+$('ul').appendAtRandom('<li>NEW!</li>');
+```
 
 Will result in something like:
 
-    <ul id="list">
-        <li>NEW!</li>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-    </ul>
-    <ul id="list">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>NEW!</li>
-    </ul>
-
+```html
+<ul id="list">
+    <li>NEW!</li>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+</ul>
+<ul id="list">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>NEW!</li>
+</ul>
+```
 
 
