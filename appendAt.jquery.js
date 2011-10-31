@@ -1,14 +1,12 @@
-
 jQuery.fn.appendAt = function( content, index ) {
     this.each(function(i, item) {
-        var $content = $(content).clone();
+        var $content = $(content);
         if ( index === 0 ) {
             $(item).prepend($content);
         } else {
             $content.insertAfter($(item).children().eq(index-1));
         }
     });
-    $(content).remove();
     return this;
 };
 jQuery.fn.appendAtRandom = function( content ) {
