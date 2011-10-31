@@ -2,8 +2,6 @@
 
 This jQuery plugin lets you append content to the DOM at a specific position amongst a node's children, or somewhere at random.  This function is 0-indexed.
 
-Note that it clones the original content you insert, and removes the original (this is so that you can append an item in multiple places at once).
-
 ##appendAt()
     $('ul').appendAt('<li>NEW!</li>', 3); // nb: 0-indexed!
 
