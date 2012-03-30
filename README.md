@@ -1,4 +1,4 @@
-#appendAt.jquery.js
+#jquery.appendAt.js
 
 This jQuery plugin lets you append content to the DOM at a specific position amongst a node's children, or somewhere at random.  This function is 0-indexed.
 
