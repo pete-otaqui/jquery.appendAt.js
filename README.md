@@ -58,13 +58,13 @@ $('ul').appendAtRandom('<li>NEW!</li>');
 Will result in something like:
 
 ```html
-<ul id="list">
+<ul id="list-1">
     <li>NEW!</li>
     <li>One</li>
     <li>Two</li>
     <li>Three</li>
 </ul>
-<ul id="list">
+<ul id="list-2">
     <li>A</li>
     <li>B</li>
     <li>C</li>
